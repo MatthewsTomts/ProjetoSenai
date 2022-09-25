@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    position: absolute;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 800px;
+    background-color: #F9F8F6;
+}
+
+nav {
+    z-index: 1;
+    width: 400px;
+    height: 96px;
+    background-color: #F9F8F6;
+}
+
+#Topo {
+    position: absolute;
+    width: 400px;
+    height: 4px;
+    background-color: #FFBB12;
+}
+
+#RetInscreva {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #FFBB12;
+    top: 33px;
+    left: 15px;
+}
+
+h1 {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #474338;
+    top: 33px;
+    left: 20px;
+}
+
+.btn {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 47px;
+    left: 360px;
+    transition-duration: 0.5s;
+}
+.btn .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 16px;
+    top: 7px;
+    left: 4px;
+    background-color: #212121;
+    border-radius: 5px;
+}
+.btn .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #212121;
+    content: "";
+    bottom: 7px;
+    right: 0px;
+    border-radius: 5px;
+}
+.btn .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #212121;
+    content: "";
+    top: 7px;
+    right: 0px;
+    border-radius: 5px;
+}
+.btn.open .icon {
+    transition-duration: 0.5s;
+    transform: rotateZ(180deg);
+    width: 20px;
+}
+.btn.open .icon:before {
+    transform: rotateZ(45deg) scaleX(0.75) translate(20px, -12px);
+    right: 12px;
+}
+.btn.open .icon:after {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(20px, 12px);
+    right: 12px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+#nome {
+    top: 44px;
+}
+
+#email {
+    top: 128px;
+}
+
+#senha {
+    top: 212px;
+}
+
+#esconde {
+    position: absolute;
+    top: 223px;
+    left: 311px;
+    opacity: 25%;
+}
+
+#esconde:hover {
+    cursor: pointer;
+}
+
+#cep {
+    top: 296px;
+}
+
+#cep::-webkit-outer-spin-button,
+#cep::-webkit-inner-spin-button,
+#numero::-webkit-outer-spin-button,
+#numero::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#numero {
+    top: 296px;
+    left: 190px;
+}
+
+#rua {
+    top: 380px;
+}
+
+#estado {
+    width: 320px;
+    height: 40px;
+    top: 464px;
+}
+
+
+form {
+    position: absolute;
+    width: 360px;
+    height: 640px;
+    background-color: #FFF;
+    border-radius: 5px;
+    left: 20px;
+    top: 99px;
+}
+
+.block {
+    display: block;
+}
+
+[for=nome] {
+    top: 20px;
+}
+
+[for=email] {
+    top: 104px;
+}
+
+[for=senha] {
+    top: 188px;
+}
+
+[for=cep] {
+    top: 272px;
+}
+
+[for=numero] {
+    position: absolute;
+    left: 190px;
+    top: 272px;
+}
+
+[for=rua] {
+    top: 356px;
+}
+
+[for=estado] {
+    top: 440px;
+}
+
+.input {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    display: block;
+
+    width: 314px;
+    height: 34px;
+    padding: 3px;
+    left: 20px;
+
+    border-radius: 3px;
+
+    color: #504d44;
+    background-color: #F9F8F6;
+    border: 0px;
+    outline: 1px solid #D2CEC5;
+}
+
+.input:focus-visible {
+    left: 19px;
+
+    border: 1px solid #FFBB12;
+    outline: 2px solid #FEF1B9;
+    background-color: #fff;
+}
+
+#containerCheckbox {
+    display: block;
+    position: absolute;  
+    top: 527px;  
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#containerCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#checkmark {
+    position: absolute;
+    height: 21px;
+    width: 21px;
+
+    border-radius: 3px;
+    background-color: #F9F8F6;
+    outline: 1px solid #D2CEC5;
+}
+
+#containerCheckbox:hover input ~ #checkmark {
+    background-color: #dfdfdf;
+}
+
+#containerCheckbox input:checked ~ #checkmark{
+    background-color: #FFBB12;
+    height: 23px;
+    width: 23px;
+    top: -1px;
+    left: -1px;
+    outline: 0px;
+}
+
+#checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#containerCheckbox input:checked ~ #checkmark:after {
+    display: block;
+}
+
+#containerCheckbox #checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #FEF1B9;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#textCheckbox {
+    width: 284px;
+    position: absolute;
+    left: 31px;
+    right: 0px;
+}
+
+.ladoAlado {
+    display: inline;
+    width: 150px;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1C1B17;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#botaoSubmit {
+    position: absolute;
+    width: 177px;
+    height: 49px;
+    left: 20px;
+    top: 570px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    border: 0px;
+    border-radius: 5px;
+
+    background-color: #FFBB12;
+    color: #764701;
+
+    cursor: pointer;
+}

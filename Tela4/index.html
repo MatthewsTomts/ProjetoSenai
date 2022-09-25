@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/click.js"></script>
+    <title>Tela 4</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <canvas id="topo"></canvas>
+            <h1>Conta Corrente</h1>
+            <div id="Botao" class="btn" onclick="menu()">
+                <div class="icon"></div>
+            </div>
+        </nav>
+
+        <div id="divValor">
+            <p id="valor">R$ 12.345,00</p>
+            <img src="img/esconder.svg" alt="icone de olho" onclick="esconder()">
+        </div>
+
+        <div id="divBotoes">
+            <button id="cartao"><img src="img/cartao.svg" alt="Desenho de um cartão"></button>
+            <label for="cartao">Cartão</label>
+
+            <button id="boleto"><img src="img/boleto.svg" alt=""></button>
+            <label for="boleto">Boleto</label>
+
+            <button id="transferir"><img src="img/transferir.svg" alt=""></button>
+            <label for="transferir">Transferir</label>
+
+            <button id="gastos"><img src="img/gastos.svg" alt=""></button>
+            <label for="gastos">Gastos</label>
+        </div>
+        
+        <h2 id="tituloHistorico">transações recentes</h2>
+        <div id="divHistorico">
+            <div class="dados">
+                <canvas class="quadrado" id="quadrado1"></canvas>
+                <canvas class="traco" id="traco1"></canvas>
+                <p class="valor" id="valor1">R$ 25,50</p>
+                <p class="entidade" id="entidade1">Supermercado</p>
+                <p class="data" id="data1">11/12</p>
+                <p class="hora" id="hora1">13:32</p>
+                <canvas class="divisao" id="divisao1"></canvas>
+            </div>
+            
+            <div class="dados">
+                <canvas class="quadrado" id="quadrado2"></canvas>
+                <canvas class="traco" id="traco2"></canvas>
+                <p class="valor" id="valor2">R$ 344,00</p>
+                <p class="entidade" id="entidade2">Shopping</p>
+                <p class="data" id="data2">09/12</p>
+                <p class="hora" id="hora2">13:32</p>
+                <canvas class="divisao" id="divisao2"></canvas>
+            </div>
+
+            <div class="dados">
+                <canvas class="quadrado" id="quadrado3"></canvas>
+                <canvas class="traco" id="traco3"></canvas>
+                <canvas class="traco" id="traco3Reto"></canvas>
+                <p class="valor" id="valor3">R$ 149,00</p>
+                <p class="entidade" id="entidade3">Pix *4442 Ana</p>
+                <p class="data" id="data3">09/12</p>
+                <p class="hora" id="hora3">13:32</p>
+                <canvas class="divisao" id="divisao3"></canvas>
+            </div>
+
+            <div class="dados">
+                <canvas class="quadrado" id="quadrado4"></canvas>
+                <canvas class="traco" id="traco4"></canvas>
+                <p class="valor" id="valor4">R$ 149,00</p>
+                <p class="entidade" id="entidade4">Farmácia</p>
+                <p class="data" id="data4">08/12</p>
+                <p class="hora" id="hora4">13:32</p>
+                <canvas class="divisao" id="divisao4"></canvas>
+            </div>
+
+            <div class="dados">
+                <canvas class="quadrado" id="quadrado5"></canvas>
+                <canvas class="traco" id="traco5"></canvas>
+                <p class="valor" id="valor5">R$ 23,43</p>
+                <p class="entidade" id="entidade5">Supermercado</p>
+                <p class="data" id="data5">08/12</p>
+                <p class="hora" id="hora5">13:32</p>
+                <canvas class="divisao" id="divisao5"></canvas>
+            </div>
+
+            <div class="dados">
+                <canvas class="quadrado" id="quadrado6"></canvas>
+                <canvas class="traco" id="traco6"></canvas>
+                <canvas class="traco" id="traco6Reto"></canvas>
+                <p class="valor" id="valor6">R$ 2999,00</p>
+                <p class="entidade" id="entidade6">Transferência *0223</p>
+                <p class="data" id="data6">05/12</p>
+                <p class="hora" id="hora6">13:32</p>
+                <canvas class="divisao" id="divisao6"></canvas>
+            </div>
+
+            <div class="dados">
+                <canvas class="quadrado" id="quadrado7"></canvas>
+                <canvas class="traco" id="traco7"></canvas>
+                <p class="valor" id="valor7">R$ 23,34</p>
+                <p class="entidade" id="entidade7">Supermercado</p>
+                <p class="data" id="data7">02/12</p>
+                <p class="hora" id="hora7">13:32</p>
+                <canvas class="divisao" id="divisao7"></canvas>
+            </div>
+        </div>
+        </main>
+</body>
+</html>

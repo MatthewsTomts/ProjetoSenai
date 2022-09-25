@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+main {
+    position: absolute;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 800px;
+    background-color: #F6F7F9;
+}
+
+
+nav {
+    height: 88px;
+}
+#topo {
+    display: block;
+    width: 400px;
+    height: 3px;
+    background-color: #2393F7;
+}
+nav h1 {
+    display: inline;
+    position: relative;
+    top: 30px;
+    left: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #292E32;
+}
+
+.btn {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 36px;
+    left: 360px;
+    transition-duration: 0.5s;
+}
+.btn .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 16px;
+    top: 7px;
+    left: 4px;
+    background-color: #212121;
+    border-radius: 5px;
+}
+.btn .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #212121;
+    content: "";
+    bottom: 7px;
+    right: 0px;
+    border-radius: 5px;
+}
+.btn .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #212121;
+    content: "";
+    top: 7px;
+    right: 0px;
+    border-radius: 5px;
+}
+.btn.open .icon {
+    transition-duration: 0.5s;
+    transform: rotateZ(180deg);
+    width: 20px;
+}
+.btn.open .icon:before {
+    transform: rotateZ(45deg) scaleX(0.75) translate(20px, -12px);
+    right: 12px;
+}
+.btn.open .icon:after {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(20px, 12px);
+    right: 12px;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+
+main > div {    
+    display: inline-block;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #EBECEE;
+}
+
+#divValor {
+    position: relative;
+    left: 20px;
+    width: 360px;
+    height: 68px;
+}
+#divValor p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+#divValor img{
+    position: absolute;
+    top: 21px;
+    left: 319px;
+
+    width: 26px;
+    height: 26px;
+}
+
+#divBotoes {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 360px;
+    height: 120px;
+}
+#divBotoes button {
+    position: absolute;
+    top: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #2393F7;
+
+    border-radius: 14px;
+    border: none;
+
+    cursor: pointer;
+}
+#divBotoes img {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+#divBotoes label {
+    position: absolute;
+    top: 85px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #67737E;
+}
+#divBotoes [for=cartao] {
+    left: 29px;
+}
+#divBotoes [for=boleto] {
+    left: 114px;
+}
+#divBotoes [for=transferir] {
+    left: 192px;
+}
+#divBotoes [for=gastos] {
+    left: 283px;
+}
+#divBotoes #cartao {
+    left: 20px;
+}
+#divBotoes #boleto {
+    left: 105px;
+}
+#divBotoes #transferir {
+    left: 190px;
+}
+#divBotoes #gastos {
+    left: 275px;
+}
+
+#tituloHistorico {
+    position: absolute;
+    left: 41px;
+    top: 315px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    color: #8F99A3;
+}
+#divHistorico {
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    left: 25px;
+    top: 339px;
+}
+.traco {
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    left: 17px;
+    
+    background: #67737F;
+}
+.quadrado {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 15px;
+    
+    background: #E1E5E8;
+    border-radius: 2px; 
+}
+.valor {
+    position: absolute;
+    left: 28px;
+    
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    color: #374047;
+}
+.entidade {
+    position: absolute;
+    left: 28px; 
+    
+    font-family: 'Roboto'; 
+    font-weight: 400;
+    font-size: 12px;
+    color: #68727C;
+}
+.data {
+    position: absolute;
+    left: 292px;
+    
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #66737C;
+}
+.hora {
+    position: absolute;
+    left: 305px;
+    
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: #66737C; 
+}
+.divisao {
+    position: absolute;
+    width: 320px;
+    height: 2px;
+    left: 15px;
+    
+    background: #F6F7F9;
+}
+
+#traco1 {
+    top: 30px;  
+}
+#quadrado1 {
+    top: 26px;
+}
+#valor1 {
+    top: 21px;
+}
+#entidade1 {
+    top: 43px;
+}
+#data1 {
+    top: 21px;
+}
+#hora1 {
+    top: 43px;
+}
+#divisao1 {
+    top: 67px;
+}
+
+#traco2 {
+    top: 88px;  
+}
+#quadrado2 {
+    top: 84px;
+}
+#valor2 {
+    top: 79px;
+}
+#entidade2 {
+    top: 101px;
+}
+#data2 {
+    top: 79px;
+}
+#hora2 {
+    top: 101px;
+}
+#divisao2 {
+    top: 125px;
+}
+
+#traco3 {
+    top: 146px;  
+
+    background-color: #81BE00;
+}
+#traco3Reto {
+    top: 144px;
+    left: 19.25px;
+    width: 1px;
+    height: 5px;
+
+    background-color: #81BE00;
+}
+#quadrado3 {
+    top: 142px;
+
+    background-color: #C3FF62;
+}
+#valor3 {
+    top: 137px;
+}
+#entidade3 {
+    top: 159px;
+}
+#data3 {
+    top: 137px;
+}
+#hora3 {
+    top: 159px;
+}
+#divisao3 {
+    top: 183px;
+}
+
+#traco4 {
+    top: 204px;  
+}
+#quadrado4 {
+    top: 200px;
+}
+#valor4 {
+    top: 195px;
+}
+#entidade4 {
+    top: 217px;
+}
+#data4 {
+    top: 195px;
+}
+#hora4 {
+    top: 217px;
+}
+#divisao4 {
+    top: 241px;
+}
+
+#traco5 {
+    top: 262px;  
+}
+#quadrado5 {
+    top: 258px;
+}
+#valor5 {
+    top: 253px;
+}
+#entidade5 {
+    top: 275px;
+}
+#data5 {
+    top: 253px;
+}
+#hora5 {
+    top: 275px;
+}
+#divisao5 {
+    top: 299px;
+}
+
+#traco6 {
+    top: 320px;  
+
+    background-color: #81BE00;
+}
+#traco6Reto {
+    top: 318px;
+    left: 19.25px;
+    width: 1px;
+    height: 5px;
+
+    background-color: #81BE00;
+}
+#quadrado6 {
+    top: 316px;
+
+    background-color: #C3FF62;
+}
+#valor6 {
+    top: 311px;
+}
+#entidade6 {
+    top: 333px;
+}
+#data6 {
+    top: 311px;
+}
+#hora6 {
+    top: 333px;
+}
+#divisao6 {
+    top: 357px;
+}
+
+#traco7 {
+    top: 378px;  
+}
+#quadrado7 {
+    top: 374px;
+}
+#valor7 {
+    top: 369px;
+}
+#entidade7 {
+    top: 391px;
+}
+#data7 {
+    top: 369px;
+}
+#hora7 {
+    top: 391px;
+}

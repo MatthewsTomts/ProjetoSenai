@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+main {
+    position: absolute;
+    height: 100vh;
+    background-color: #F6F7F9;
+}
+
+
+nav {
+    height: 11vh;
+}
+#topo {
+    display: block;
+    width: 100vw;
+    height: 0.625vh;
+    background-color: #2393F7;
+}
+nav h1 {
+    display: inline;
+    position: relative;
+    top: 4.375vh;
+    left: 5vw;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3vh;
+    color: #292E32;
+}
+.btn {
+    position: absolute;
+    width: 2.5vh;
+    height: 2.5vh;
+    top: 6vh;
+    right: 5vw;
+    transition-duration: 0.5s;
+}
+.btn.open {
+    right: 6vw;
+}
+.btn .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0.25vh;
+    width: 2vh;
+    top: 0.875vh;
+    left: 0.5vh;
+    background-color: #212121;
+    border-radius: 5px;
+}
+.btn .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0.25vh;
+    width: 2.5vh;
+    background-color: #212121;
+    content: "";
+    bottom: 0.875vh;
+    right: 0px;
+    border-radius: 5px;
+}
+.btn .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0.25vh;
+    width: 2.5vh;
+    background-color: #212121;
+    content: "";
+    top: 0.875vh;
+    right: 0px;
+    border-radius: 5px;
+}
+.btn.open .icon {
+    transition-duration: 0.5s;
+    transform: rotateZ(180deg);
+    width: 5vw;
+}
+.btn.open .icon:before {
+    transform: rotateZ(45deg) scaleX(0.75) translate(2.5vh, -1.5vh);
+    right: 3vw;
+}
+.btn.open .icon:after {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(2.5vh, 1.5vh);
+    right: 3vw;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+
+main > div {    
+    display: inline-block;
+
+    background-color: #ffffff;
+    border-radius: 0.625vh;
+    box-shadow: 0.25vh 0.25vh 0.25vh #EBECEE;
+}
+
+#divValor {
+    position: absolute;
+    left: 5vw;
+    width: 90vw;
+    height: 8.75vh;
+}
+#divValor p {
+    position: absolute;
+    top: 2.625vh;
+    left: 2.5vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vh;
+    font-weight: 700;
+}
+#divValor img{
+    position: absolute;
+    top: 2.5vh;
+    right: 2.5vh;
+
+    width: 3.75vh;
+    height: 3.75vh;
+}
+
+
+#divBotoes {
+    position: absolute;
+    top: 22.5vh;
+    left: 5vw;
+    width: 90vw;
+    height: 13.75vh;
+}
+#divBotoes button {
+    position: absolute;
+    top: 2.5vh;
+
+    width: 6.875vh;
+    height: 6.875vh;
+
+    background-color: #2393F7;
+
+    border-radius: 1.75vh;
+    border: none;
+
+    cursor: pointer;
+}
+#divBotoes img {
+    position: absolute;
+    top: 2.125vh;
+    left: 2.125vh;
+    width: 2.625vh;
+    height: 2.625vh;
+}
+#divBotoes label {
+    position: absolute;
+    top: 9.625vh;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.75vh;
+
+    color: #67737E;
+}
+#divBotoes [for=cartao] {
+    left: 8.75vw;
+    width: 11.25vw;
+    text-align: center;
+}
+#divBotoes #cartao {
+    left: 7.5vw;
+}
+#divBotoes [for=boleto] {
+    left: 28.75vw;
+    width: 11.25vw;
+    text-align: center;
+}
+#divBotoes #boleto {
+    left: 27.5vw;
+}
+#divBotoes [for=transferir] {
+    left: 47.5vw;
+    width: 11.25vw;
+    text-align: center;
+}
+#divBotoes #transferir {
+    left: 47.5vw;
+}
+#divBotoes [for=gastos] {
+    left: 68.75vw;
+    width: 11.25vw;
+    text-align: center;
+}
+#divBotoes #gastos {
+    left: 67.5vw;
+}
+
+
+#tituloHistorico {
+    position: absolute;
+    left: calc(5vw + 20px);
+    top: 38.75vh;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1.625vh;
+    text-transform: uppercase;
+
+    color: #8F99A3;
+}
+#divHistorico {
+    position: absolute;
+    width: 90vw;
+    height: 55vh;
+    left: 5vw;
+    top: 42.5vh;
+}
+.traco {
+    position: absolute;
+    width: 0.625vh;
+    height: 0.125vh;
+    right: 83vw;
+    
+    background: #67737F;
+}
+.quadrado {
+    position: absolute;
+    width: 1.125vh;
+    height: 1.125vh;
+    right: 82.5vw;
+    
+    background: #E1E5E8;
+    border-radius: 2px; 
+}
+.valor {
+    position: absolute;
+    left: 8.5vw;
+    
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 2vh;
+    color: #374047;
+}
+.entidade {
+    position: absolute;
+    left: 8.5vw; 
+    
+    font-family: 'Roboto'; 
+    font-weight: 400;
+    font-size: 1.5vh;
+    color: #68727C;
+}
+.data {
+    position: absolute;
+    right: 5vw;
+    
+    font-family: 'Roboto';
+    font-size: 2vh;
+    color: #66737C;
+}
+.hora {
+    position: absolute;
+    right: 5vw;
+    
+    font-family: 'Roboto';
+    font-size: 1.5vh;
+    color: #66737C; 
+}
+.divisao {
+    position: absolute;
+    width: 80vw;
+    height: 0.25vh;
+    left: 5vw;
+    
+    background: #F6F7F9;
+}
+
+#traco1 {
+    top: 3.75vh;  
+}
+#quadrado1 {
+    top: 3.25vh;
+}
+#valor1 {
+    top: 2.5vh;
+}
+#entidade1 {
+    top: 5.5vh;
+}
+#data1 {
+    top: 2.5vh;
+}
+#hora1 {
+    top: 5.5vh;
+}
+#divisao1 {
+    top: 8.125vh;
+}
+
+#traco2 {
+    top: 11.25vh;  
+}
+#quadrado2 {
+    top: 10.75vh;
+}
+#valor2 {
+    top: 10vh;
+}
+#entidade2 {
+    top: 13vh;
+}
+#data2 {
+    top: 10vh;
+}
+#hora2 {
+    top: 13vh;
+}
+#divisao2 {
+    top: 15.625vh;
+}
+
+#traco3 {
+    top: 18.75vh;  
+
+    background-color: #81BE00;
+}
+#traco3Reto {
+    top: 18.5vh;
+    left: 6.25vw;
+    width: 0.125vh;
+    height: 0.625vh;
+
+    background-color: #81BE00;
+}
+#quadrado3 {
+    top: 18.25vh;
+
+    background-color: #C3FF62;
+}
+#valor3 {
+    top: 17.5vh;
+}
+#entidade3 {
+    top: 20.5vh;
+}
+#data3 {
+    top: 17.5vh;
+}
+#hora3 {
+    top: 20.5vh;
+}
+#divisao3 {
+    top: 23.125vh;
+}
+
+#traco4 {
+    top: 26.25vh;  
+}
+#quadrado4 {
+    top: 25.75vh;
+}
+#valor4 {
+    top: 25vh;
+}
+#entidade4 {
+    top: 28vh;
+}
+#data4 {
+    top: 25vh;
+}
+#hora4 {
+    top: 28vh;
+}
+#divisao4 {
+    top: 30.625vh;
+}
+
+#traco5 {
+    top: 33.75vh;  
+}
+#quadrado5 {
+    top: 33.25vh;
+}
+#valor5 {
+    top: 32.5vh;
+}
+#entidade5 {
+    top: 35.5vh;
+}
+#data5 {
+    top: 32.5vh;
+}
+#hora5 {
+    top: 35.5vh;
+}
+#divisao5 {
+    top: 38.125vh;
+}
+
+#traco6 {
+    top: 41.25vh;  
+
+    background-color: #81BE00;
+}
+#traco6Reto {
+    top: 41vh;
+    left: 6.25vw;
+    width: 0.125vh;
+    height: 0.625vh;
+
+    background-color: #81BE00;
+}
+#quadrado6 {
+    top: 40.75vh;
+
+    background-color: #C3FF62;
+}
+#valor6 {
+    top: 40vh;
+}
+#entidade6 {
+    top: 43vh;
+}
+#data6 {
+    top: 40vh;
+}
+#hora6 {
+    top: 43vh;
+}
+#divisao6 {
+    top: 45.625vh;
+}
+
+#traco7 {
+    top: 48.75vh;  
+}
+#quadrado7 {
+    top: 48.25vh;
+}
+#valor7 {
+    top: 47.5vh;
+}
+#entidade7 {
+    top: 50.5vh;
+}
+#data7 {
+    top: 47.5vh;
+}
+#hora7 {
+    top: 50.5vh;
+}

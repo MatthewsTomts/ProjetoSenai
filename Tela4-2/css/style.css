@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box;
+}
+
+
+#gridContainer {
+    display: grid;
+    grid-template-rows: 11.25vh 11.25vh 16.25vh 61.25vh;   
+    height: 100vh;  
+    
+    background-color: #F6F7F9;
+}
+
+
+header {
+    display: grid;  
+    grid-template-columns: 46vw 54vw;
+    grid-template-rows: 0.625vh auto;
+}
+header canvas {
+    grid-column: 1;
+    grid-row: 1;
+
+    height: 0.625vh;
+    width: 100vw;
+
+    background-color: #2393F7;
+}
+header h1 {
+    grid-column: 1;
+    grid-row: 1;
+
+    margin-top: 4.375vh;
+   
+
+    text-transform: capitalize;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3vh;
+
+    color: #292E32;
+}
+.btn {
+    align-self: center;
+    grid-column: 2;
+
+    margin-right: 20px;
+    width: 2.5vh;
+    height: 2.5vh;
+
+    transition-duration: 0.5s;
+}
+.btn .icon {
+    grid-column: 2;
+
+    transition-duration: 0.5s;
+    height: 0.3125vh;
+    width: 2vh;
+    background-color: #212121;
+    border-radius: 5px;
+}
+.btn .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0.3125vh;
+    width: 2.5vh;
+    background-color: #212121;
+    content: "";    
+    bottom: 0.78125vh;
+    right: 0px;
+    border-radius: 5px;
+}
+.btn .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0.3125vh;
+    width: 2.5vh;
+    background-color: #212121;
+    content: "";
+    top: 0.78125vh;
+    right: 0px;
+    border-radius: 5px;
+}
+.btn.open .icon {
+    transition-duration: 0.5s;
+    transform: rotateZ(180deg);
+    width: 2.5vh;
+}
+.btn.open .icon:before {
+    transform: rotateZ(45deg) scaleX(0.75) translate(2.5vh, -1.625vh);
+    right: 1.5vh;
+}
+.btn.open .icon:after {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(2.5vh, 1.625vh);
+    right: 1.5vh;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+
+#valor div {
+    position: absolute;
+    width: 45vh;
+    height: 8.75vh;
+    top: 90px;
+    left: calc(50vw - 22.5vh);
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px #EBECEE;
+    border-radius: 5px;
+}
+#valor p {
+    position: absolute;
+    left: 2.5vh;
+    top: 3vh;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3vh;
+
+    color: #394048;
+}
+
+
+#botoes {
+}
+
+
+main {
+}

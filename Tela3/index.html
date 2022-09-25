@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/click.js"></script>
+</head>
+<body>
+    <main>
+        <nav>
+            <canvas id="Topo"></canvas>
+            <canvas id="RetInscreva"></canvas>
+            <h1>Inscreva-se</h1>
+            <div id="Botao" class="btn" onclick="menu()">
+                <div class="icon"></div>
+            </div>
+        </nav>
+        <form>
+            <label for="nome">Nome</label>
+            <input class="input" type="text" id="nome">
+
+            <label for="email">Email</label>
+            <input class="input" type="text" id="email">
+
+            <label for="senha">Senha</label>
+            <input class="input" type="password" id="senha">
+            <img id="esconde" onclick="esconder()" src="img/esconder.svg" alt="olho - Mostrar Senha">
+
+            <div class="block">
+                <label for="cep">CEP</label>
+                <label for="numero">Numero</label>
+            </div>
+            
+            <div class="block">
+                <input class="input ladoAlado" type="number" id="cep">
+                <input class="input ladoAlado" type="number" id="numero">
+            </div>
+
+            <label for="rua">Rua</label>
+            <input class="input" type="text" id="rua">
+
+            <label for="estado">Estado</label>
+            <select class="input" id="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+
+            <label id="containerCheckbox">
+                <input type="checkbox" id="checkbox">
+                <span id="checkmark"></span>
+                <p id="textCheckbox">Concordo com os Termos e Condições</p>
+            </label>
+
+            <input type="submit" id="botaoSubmit" value="Cadastrar Conta">
+        </form>
+    </main>
+</body>
+</html>
